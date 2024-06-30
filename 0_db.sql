@@ -1,0 +1,10 @@
+SET client_encoding TO 'GBK';
+
+DROP DATABASE IF EXISTS identity_db;
+
+DROP ROLE IF EXISTS identity_db;
+
+CREATE ROLE identity_db WITH LOGIN
+    NOSUPERUSER INHERIT NOCREATEDB NOCREATEROLE;
+
+CREATE DATABASE identity_db WITH OWNER =identity_db ENCODING = 'UTF8';
