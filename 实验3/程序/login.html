@@ -1,0 +1,170 @@
+
+	<!DOCTYPE html>  
+
+	<html lang="en">  
+
+	<head>  
+
+	    <meta charset="UTF-8">  
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+
+	    <title>Login</title>  
+
+	    <style>  
+
+	        body {  
+
+	            font-family: Arial, sans-serif;  
+
+	            margin: 0;  
+
+	            padding: 20px;  
+
+	            display: flex;  
+
+	            justify-content: center;  
+
+	            align-items: center;  
+
+	            height: 100vh;  
+
+	            
+
+	            background-color: #ffffff;  
+
+	        }  
+
+	  
+
+	        form {  
+
+	            width: 100%;  
+
+	            max-width: 320px;  
+
+	            padding: 20px;  
+
+	            border: 1px solid #ffffff; 
+
+	            border-radius: 5px;  
+
+	              
+
+	            background-color: #ffffff;  
+
+	            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+
+	        }  
+
+	  
+
+	        form label {  
+
+	            display: block;  
+
+	            margin-bottom: 8px;  
+
+	        
+
+	            font-size: 16px; 
+
+	            color: #333;
+
+	            font-weight: bold;  
+
+	        }  
+
+	  
+
+	        form input[type="text"],  
+
+	        form input[type="password"] {  
+
+	            width: 100%;  
+
+	            padding: 10px;  
+
+	            margin-bottom: 20px;  
+
+	            border: 1px solid #999;
+
+	            border-radius: 4px;  
+
+	            box-sizing: border-box;  
+
+	           
+
+	            font-size: 14px; 
+
+	            color: #333; 
+
+	        }  
+
+	  
+
+	        form input[type="submit"] {  
+
+	            width: 100%;  
+
+	            padding: 10px;  
+
+	          
+
+	            background-color: #2d9e65; 
+
+	            color: white;  
+
+	            border: none;  
+
+	            border-radius: 4px;  
+
+	            cursor: pointer;  
+
+	           
+
+	            font-size: 16px; 
+
+	            transition: background-color 0.3s ease;  
+
+	        }  
+
+	  
+
+	        form input[type="submit"]:hover {  
+
+	            
+
+	            background-color: #2d9e65; 
+
+	        }  
+
+	    </style>  
+
+	</head>  
+
+	<body>  
+
+	   
+
+	    <form action="/login" method="post">  
+
+	        <label for="username_input">Username:</label>  
+
+	        <input type="text" id="username_input" name="username_input" required>  
+
+	  
+
+	        <label for="password_input">Password:</label>  
+
+	        <input type="password" id="password_input" name="password_input" required>  
+
+	  
+
+	        <input type="submit" value="Sign In">  
+
+	    </form>  
+
+	</body>  
+
+	</html>
